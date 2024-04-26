@@ -59,6 +59,10 @@ def readThing(input1):
                     else:
                         color = (0, 0, 255)
                     frame = cv2.polylines(frame, [p.astype(int)], True, color, 8)
+            else:       
+                count += 1   
+                if(count > 15):
+                    returned = True    
             cv2.imshow(window_name, frame)
     
         if cv2.waitKey(delay) & 0xFF == ord('q'):
