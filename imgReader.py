@@ -89,3 +89,9 @@ q = (getPlant(int(s)))
 g = getMoisture(int(s))
 
 print(getReturn(s, q, str(g)))'''
+#instructions:
+'''
+readThing returns the decoded QR code data if a qr code is detected in the image. If it doesnt detect an image the current program will break and just need to be restarted.
+this should be a number which when converted into an int is the index of both the plant array and the moisture array. you can use getPlant and getMoisture with the int cast of the string number
+to get the plant name and moisture, and then put everything into getReturn (cast moisture to string)
+'''
